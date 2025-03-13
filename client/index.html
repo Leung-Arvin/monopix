@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASM Image Filters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        canvas {
+            margin-top: 20px;
+            border: 1px solid #000;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apply Grayscale Filter</h1>
+
+    <!-- Image Upload -->
+    <input type="file" id="fileInput" accept="image/*" />
+    
+    <!-- Image Display (Updated after grayscale) -->
+    <img id="image" src="" alt="Uploaded Image" />
+
+    <!-- Grayscale Button -->
+    <button id="applyGrayscaleBtn" disabled>Apply Grayscale</button>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
